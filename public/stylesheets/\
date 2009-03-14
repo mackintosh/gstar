@@ -1,0 +1,110 @@
+body {
+  background: #dfdfdf;
+  margin: auto;
+  padding: auto;
+  font-family: "Trebuchet MS", sans-serif; 
+  font-size: 11pt;
+  text-align: center;
+}
+
+/* basic tags */
+img { border: 0; margin: 0; padding: 0; }
+p { margin: 0; padding: 0; }
+ul { margin: 0; padding: 0; }
+li { margin: 0; padding: 0; }
+
+#wrapper {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: auto;
+  width: 100%;
+}
+
+/* begin header */
+
+#header {
+  text-align: left;
+  background: #dfdfdf url('/images/headergrad.gif') repeat-x top;
+  height: 87px;
+}
+
+#header div.mainmenu {
+}
+
+#header p.logo {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 96px;
+  height: 87px;
+  background: url('/images/minilogo.gif') no-repeat top left;
+}
+
+#header div.first {
+  float: left;
+  margin-left: 115px;
+  height: 47px;
+}
+
+#header div.first ul {
+  color: #bcbcbc;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  margin-top: 14px;
+  list-style-type: none;
+  display: block;
+}
+
+#header div.first ul li {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#header div.first ul li a:link {color: #FFFFFF; text-decoration: none;}
+#header div.first ul li a:visited {color: #FFFFFF; text-decoration: none;}
+
+#header div.second {
+  float: left;
+  width: 100%;
+  height: 40px;
+}
+
+#header div.second ul {
+  font-weight: bold;
+  font-size: 10pt;
+  margin-left: 119px;
+  margin-top: 7px;
+  display: block;
+  list-style-type: none;
+}
+
+#header div.second ul li {
+  float: left;
+  border: 1px solid black;
+  color: #730000;
+  height: 25px;
+  vertical-align: center;
+}
+
+#header div.third {
+  float: left;
+  height: 34px;
+  width: 100%;
+  background: url('/images/bl_menu.gif') no-repeat bottom left;
+}
+
+#header div.third ul {
+  list-style-type: none;
+}
+
+#header div.third ul li {
+  float: left;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+#header div.third ul li.active {
+  font-weight: bold;
+}

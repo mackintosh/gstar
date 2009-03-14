@@ -1,0 +1,7 @@
+<% for article in @articles %>
+		<li class="title"><%= link_to article.title, :controller => 'articles', :action => article.id  %></li>
+		<li class="date"><%= article.created_at.strftime("%B %d, %Y") %></a>
+		<li class="desc"><%= simple_format(article.description) %></li>
+		<!-- <li class="author">Posted by <a href="">Dave</a><span>Comment</span></li> -->
+<% end %>
+
