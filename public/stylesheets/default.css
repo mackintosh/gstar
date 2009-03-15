@@ -470,7 +470,6 @@ div { margin: 0; padding: 0; }
   background: url('/images/brborder.gif') no-repeat right top;
 }
 
-
 #content div.pagination {
   margin-bottom: 20px;
   border-bottom: 1px dotted gray;
@@ -480,3 +479,9 @@ div { margin: 0; padding: 0; }
   margin-bottom: 10px;
   font-style: italic;
 }
+
+/* enbed video link */
+table.tborder { border: 1px solid #AEAEAE; }
+table.tborder td.tcat {background: url('/images/thead.gif') repeat-x top;}
+table.tborder a:link {color: #FFFFFF; text-decoration: none; font-weight: bold;}
+table.tborder a:visited {color: #FFFFFF; text-decoration: none; font-weight: bold;}
