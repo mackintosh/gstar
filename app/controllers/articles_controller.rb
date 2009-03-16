@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
   
+  before_filter :authorize, :except => [:rss, :show, :login]
+
   # GET /articles
   # GET /articles.xml
   def index
@@ -84,4 +86,5 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

@@ -1,0 +1,22 @@
+<h1>Listing sponsors</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Image url</th>
+  </tr>
+
+<% for sponsor in @sponsors %>
+  <tr>
+    <td><%=h sponsor.title %></td>
+    <td><%= image_tag('/images/sponsor/' + sponsor.image_url, :width => 100) %></td>
+    <td><%= link_to 'Show', sponsor %></td>
+    <td><%= link_to 'Edit', edit_sponsor_path(sponsor) %></td>
+    <td><%= link_to 'Destroy', sponsor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sponsor', new_sponsor_path %>

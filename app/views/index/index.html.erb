@@ -5,8 +5,6 @@
  
 		<div class="article">
 		<%= will_paginate @articles %>
-				
-
 		<ul>
 			<%= render(:partial => "index") %>
 		</ul>
@@ -14,8 +12,13 @@
 
 	</div>
 	<div class="right_content">
-		<div class="video">
-			<p>Latest Videos</p>
+		<div class="sponsor">
+			<p>Sponsors <a href="mailto:admin@generals.com">(interested in sponsoring us?)</a></p>
+			<div id="s1" class="pics">
+				<% for sponsor in @sponsors %>
+					<%= image_tag( '/images/sponsor/' + sponsor.image_url, :width => 250, :height => 150, :alt => sponsor.title ) %>
+				<% end %>
+			</div>
 		</div>	
 	</div>
 
