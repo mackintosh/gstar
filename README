@@ -1,1 +1,5 @@
-This is a just a basic example project.
+To start working on this project execute the following commands
+
+rake db:create
+rake db:sessions:create
+rake db:migrate
